@@ -14,7 +14,7 @@
  *      Two way toggles have ceiling value of....................1883
  *      Knobs have a floor value of .............................1060
  *      Knobs have a ceiling value of............................1887
- *   5. As of now, the drive motors are controlled by L298Ns. Bigger, beefier, more manly drivers might be needed to push a 25 lb robot. 
+ *   5. As of now, the drive motors are controlled by L298Ns. Bigger drivers might be needed to push a 25 lb robot. 
  */
  
 #include <math.h> // I need this to round intensity values
