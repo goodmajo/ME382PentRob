@@ -7,7 +7,7 @@
 #include <MotorDrv.h>
 #include <math.h> // I need this to round intensity values
 
-	int ls ;
+    int ls ;
     int rs ;
     
 MotorDrv::L298N(int ltc, int rtc, int lpwm, int lpos, int lneg, int rpwm, int rpos, int rneg, float intensity ){
