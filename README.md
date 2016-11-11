@@ -9,3 +9,10 @@ It is very important that anyone that reads this and looks at my code understand
 * I'm going to make a function that easily stops a pair of motors, probably once construction of the robot commences.
 * I'm trying my hand at making a library to do what these functions I'm writing do. It's not quite there yet, but it's close.
 * I still do not know how to use git. I'm working on this.
+
+## 11 - 10 - 2016 ##
+This time around there were pretty big changes. It took me forever to get these changes done because of school ,waiting for parts, etc, but I'm finally ready to post new stuff.
+* I made a class (MotorDrv) to deal with driving the motors. So far I just have functions to kill the motors (motorKill) and to drive DC motors with the (L298N) module. I'll add more motor drivers to this class as I'm able to get my hands on them. In any event, the code is a tad less monolithic now and *much* easier to read.
+* I started using a stepper to perform one function. For that I just use the stepper library everyone uses. Again, if I can figure out how they work I'll add steppers to my MotorDrv class.
+
+-Joel
