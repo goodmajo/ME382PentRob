@@ -7,7 +7,7 @@
 #include <MotorDrv.h>
 #include <math.h> // I need this to round intensity values
 
-    int ls ;
+	int ls ;
     int rs ;
     
 MotorDrv::L298N(int ltc, int rtc, int lpwm, int lpos, int lneg, int rpwm, int rpos, int rneg, float intensity ){
@@ -53,6 +53,47 @@ MotorDrv::L298N(int ltc, int rtc, int lpwm, int lpos, int lneg, int rpwm, int rp
           analogWrite(rpwm, 0) ;
         }
   }
+
+// This controls two DC motors using two  BTS7960 43 amp motor drivers. 
+// Usage: MotorDrv.IBT( <left transmitter channel>, <right transmitter channel>, <left Lpwm>, <left Rpwm>, <Right Lpwm>, <Right Rpwm>, <% of max possible motor strength>)
+MotorDrv::IBT2(int ls, int rs, int m1pwml, int m1pwmr, int m2pwml, int m2pwmr, float intensity ){
+
+    intensity = (intensity * .01) ; // Turning intensity into an easy to use multiplier
+    // Mapping motor movement to transmitter stick values.
+    // Constraints help even out the motor performance when the robot is backing up. Without this constraint the motors stop behaving when I reverse the motor, especially at the lowest end.
+    ls = constrain(map(ls, 1040, 1881, -255, 255), round(-150*intensity), round(255*intensity) ) ;
+    rs = constrain(map(rs, 1040, 1881, -255, 255), round(-150*intensity), round(255*intensity) ) ;
+    
+      if(ls > 10){
+          analogWrite(m1pwml, ls) ; // This is pulse width! Send to appropriate spot on driver or nothing will happen!
+          analogWrite(m1pwmr, 0) ;
+        }
+      if(ls < -10){
+          analogWrite(m1pwml, 0) ;
+          analogWrite(m1pwmr, ls) ;
+        }
+        // Now I want to make a spot where there is absolutely no movement at all in the motor. I'll tell the arduino to feed the motors no current if the transmitter vals are within a certain domain.
+      if(-10<=ls && ls<=10){
+          analogWrite(m1pwml, 0) ;
+          analogWrite(m1pwmr, 0) ;
+        }
+
+      if(rs > 10){
+          analogWrite(m2pwml, ls) ; // This is pulse width! Send to appropriate spot on driver or nothing will happen!
+          analogWrite(m2pwmr, 0) ;
+        }
+      if(rs < -10){
+          analogWrite(m2pwml, 0) ;
+          analogWrite(m2pwmr, ls) ;
+        }
+        // Now I want to make a spot where there is absolutely no movement at all in the motor. I'll tell the arduino to feed the motors no current if the transmitter vals are within a certain domain.
+      if(-10<=rs && rs<=10){
+          analogWrite(m2pwml, 0) ;
+          analogWrite(m2pwmr, 0) ;
+        }
+
+  }
+
 
 MotorDrv::motorKill(int PWMpintoKill){
 		analogWrite(PWMpintoKill, 0) ;

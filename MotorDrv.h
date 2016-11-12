@@ -14,6 +14,7 @@ class MotorDrv{
 
 	public:
 		L298N(int ltc, int rtc, int lpwm, int lpos, int lneg, int rpwm, int rpos, int rneg, float intensity) ;
+		IBT2(int ls, int rs, int m1pwml, int m1pwmr, int m2pwml, int m2pwmr, float intensity ) ;
 		motorKill(int PWMpintoKill) ;
 	
 	private:
