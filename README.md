@@ -15,4 +15,7 @@ This time around there were pretty big changes. It took me forever to get these 
 * I made a class (MotorDrv) to deal with driving the motors. So far I just have functions to kill the motors (motorKill) and to drive DC motors with the (L298N) module. I'll add more motor drivers to this class as I'm able to get my hands on them. In any event, the code is a tad less monolithic now and *much* easier to read.
 * I started using a stepper to perform one function. For that I just use the stepper library everyone uses. Again, if I can figure out how they work I'll add steppers to my MotorDrv class.
 
+## 11 - 11 - 2016 ##
+I added support for the BTS7960 (aka IBT_2) motor drivers I'm using to control the drive motors. It's very easy to use. Keep in mind that these drivers do not require a command to the enable pins like the L298N. Instead, I'm connecting my enable pins to the a bus that is connected to the Arduino's 5V out pin.
+
 -Joel
