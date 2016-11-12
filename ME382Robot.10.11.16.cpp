@@ -152,7 +152,7 @@ void loop() {
     lift.step(0);
      
     // Drive the robot!
-    // MotorDrv.IBT( <left transmitter channel>, <right transmitter channel>, <left Lpwm>, <left Rpwm>, <Right Lpwm>, <Right Rpwm>, <% of max possible motor strength>)
+    // MotorDrv.IBT2( <left transmitter channel>, <right transmitter channel>, <left Lpwm>, <left Rpwm>, <Right Lpwm>, <Right Rpwm>, <% of max possible motor strength>)
     MotorDrv.IBT2( xmch2, xmch3, ldpwml, ldpwmr, rdpwml, rdpwmr, 100 ) ;     
     }
 
