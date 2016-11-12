@@ -16,6 +16,6 @@ This time around there were pretty big changes. It took me forever to get these 
 * I started using a stepper to perform one function. For that I just use the stepper library everyone uses. Again, if I can figure out how they work I'll add steppers to my MotorDrv class.
 
 ## 11 - 11 - 2016 ##
-I added support for the BTS7960 (aka IBT_2) motor drivers I'm using to control the drive motors. It's very easy to use. Keep in mind that these drivers do not require a command to the enable pins like the L298N. Instead, I'm connecting my enable pins to the a bus that is connected to the Arduino's 5V out pin.
+I added support for the BTS7960 (aka IBT_2) motor drivers I'm using to control the drive motors. It's very easy to use. Keep in mind that these drivers do not require a command to the enable pins like the L298N. Instead, I'm connecting my enable pins to a bus that is connected to the Arduino's 5V out pin.
 
 -Joel
