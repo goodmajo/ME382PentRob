@@ -4,7 +4,7 @@ It is very important that anyone that reads this and looks at my code understand
   Joel Goodman
   goodmajo@oregonstate.edu
 
-##10 - 31 - 2016##
+## 10 - 31 - 2016 ##
 * I'm using a function called DCmotor to take all the controller inputs, turn them into values the driver can use, and then make the motors do their thing. This seems to me like it will improve the overall tidiness of the code and make it easier to write.
 * I'm going to make a function that easily stops a pair of motors, probably once construction of the robot commences.
 * I'm trying my hand at making a library to do what these functions I'm writing do. It's not quite there yet, but it's close.
@@ -18,4 +18,5 @@ This time around there were pretty big changes. It took me forever to get these 
 ## 11 - 11 - 2016 ##
 I added support for the BTS7960 (aka IBT_2) motor drivers I'm using to control the drive motors. It's very easy to use. Keep in mind that these drivers do not require a command to the enable pins like the L298N. Instead, I'm connecting my enable pins to a bus that is connected to the Arduino's 5V out pin.
 
--Joel
+## 11 - 15 - 2016 ##
+I've uploaded a slightly more up to date version of everything, plus a zip file of the library. My priority at this point is changing the way the IBT2 function handles enabling each side of the driver. I am starting to think that having both sides enabled all the time is not wise. I fried an Arduino mega today (!!!) and this might be at the root of that unfortunate occurance. In any event, more to come as soon as I get a replacement in the mail. 
