@@ -13,7 +13,7 @@
  */
  
 #include <MotorDrv.h> // Sweet custom class I made.
-#include <Stepper.h> // Stepper library. 
+#include <Stepper.h>  // Stepper library. 
 
 // Defining inputs. It'll make it easier to change pins if needed. Probably won't use all of these but whatever.
 #define xmch2_INPUT 4 
@@ -29,7 +29,7 @@
 #define kpwm 9        // Kick PWM
 #define kp 22         // Kick positive
 #define kn 23         // Kick negative
-#define ppwm 8       // Pull motor PWM
+#define ppwm 8        // Pull motor PWM
 #define pp 24         // Pull positive
 #define pn 25         // Pull negative
 #define liftInt1 40   // Lift Int1 on L298N
