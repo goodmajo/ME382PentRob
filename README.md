@@ -19,4 +19,7 @@ This time around there were pretty big changes. It took me forever to get these 
 I added support for the BTS7960 (aka IBT_2) motor drivers I'm using to control the drive motors. It's very easy to use. Keep in mind that these drivers do not require a command to the enable pins like the L298N. Instead, I'm connecting my enable pins to a bus that is connected to the Arduino's 5V out pin.
 
 ## 11 - 15 - 2016 ##
-I've uploaded a slightly more up to date version of everything, plus a zip file of the library. My priority at this point is changing the way the IBT2 function handles enabling each side of the driver. I am starting to think that having both sides enabled all the time is not wise. I fried an Arduino mega today (!!!) and this might be at the root of that unfortunate occurance. In any event, more to come as soon as I get a replacement in the mail. 
+I've uploaded a slightly more up to date version of everything, plus a zip file of the library. My priority at this point is changing the way the IBT2 function handles enabling each side of the driver. I am starting to think that having both sides enabled all the time is not wise. I fried an Arduino mega today (!!!) and this might be at the root of that unfortunate occurance. In any event, more to come as soon as I get a replacement in the mail.
+
+## 11 - 17 - 2017 ##
+I have changed the MotorDrv class to have the drive motors enable only when they're moving. I have not tested this yet, but I have no reason to believe it won't work. The new IBT2 function usage is described in the comments.
