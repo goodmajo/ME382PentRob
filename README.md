@@ -23,3 +23,6 @@ I've uploaded a slightly more up to date version of everything, plus a zip file 
 
 ## 11 - 17 - 2017 ##
 I have changed the MotorDrv class to have the drive motors enable only when they're moving. I have not tested this yet, but I have no reason to believe it won't work. The new IBT2 function usage is described in the comments.
+
+## 11 - 19 - 2016 ##
+The MotorDrv class works with the BTS7960. I changed the enabling and it's in good shape now. The current version of this library might be the final one for all purposes relating to this particular robot.
