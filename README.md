@@ -26,3 +26,8 @@ I have changed the MotorDrv class to have the drive motors enable only when they
 
 ## 11 - 19 - 2016 ##
 The MotorDrv class works with the BTS7960. I changed the enabling and it's in good shape now. The current version of this library might be the final one for all purposes relating to this particular robot.
+
+## 11 - 22 - 2016 ##
+The MotorDrv class now supports driving individual motors instead of just pairs of motors. I can't believe it took me so long to decide it was a good idea to include this kind of support. The usage of these new, radical, revolutionary functions is well commented in the code. At this point I doubt I'll change the library much (if at all) prior to the end of this term. My robot's code will likely change quite a lot but any further changes I make to the library will just be minor tweaks.
+
+-JRG
