@@ -32,7 +32,7 @@ The MotorDrv class now supports driving individual motors instead of just pairs 
 
 ## 11 - 25 - 2016 ##
 There were some errors in the library with the new single-motor functions, but I fixed them. 
-**Please**, if you are trying to use this code or the MotorDrv class and it gives you an error when you're trying to compile or upload, **let me know ASAP *so I can fix it ASAP* **. As the end of this term and the deadline for this project approaches I don't have time to do test the code as much as I want to, and any I would sincerely appreciate any heads up that something is wrong so I can fix it early.
+**Please**, if you are trying to use this code or the MotorDrv class and it gives you an error when you're trying to compile or upload, **let me know ASAP so I can fix it ASAP**. As the end of this term and the deadline for this project approaches I don't have time to do test the code as much as I want to, and any I would sincerely appreciate any heads up that something is wrong so I can fix it early.
 
 -JRG
 goodmajo@oregonstate.edu
