@@ -30,4 +30,9 @@ The MotorDrv class works with the BTS7960. I changed the enabling and it's in go
 ## 11 - 22 - 2016 ##
 The MotorDrv class now supports driving individual motors instead of just pairs of motors. I can't believe it took me so long to decide it was a good idea to include this kind of support. The usage of these new, radical, revolutionary functions is well commented in the code. At this point I doubt I'll change the library much (if at all) prior to the end of this term. My robot's code will likely change quite a lot but any further changes I make to the library will just be minor tweaks.
 
+## 11 - 25 - 2016 ##
+There were some errors in the library with the new single-motor functions, but I fixed them. 
+**Please**, if you are trying to use this code or the MotorDrv class and it gives you an error when you're trying to compile or upload, **let me know ASAP *so I can fix it ASAP* **. As the end of this term and the deadline for this project approaches I don't have time to do test the code as much as I want to, and any I would sincerely appreciate any heads up that something is wrong so I can fix it early.
+
 -JRG
+goodmajo@oregonstate.edu
