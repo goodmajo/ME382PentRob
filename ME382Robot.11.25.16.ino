@@ -1,6 +1,7 @@
 /* 
  * RC Control of Arduino Mega knockoff-based robot for ME 382 by Joel R. Goodman.
  * goodmajo@oregonstate.edu
+ * https://github.com/goodmajo/ME382PentRob
  * Now supports L298N and IBT_2 motor drivers via MotorDrv class.
  * Everything is controlled with the y-axes of the thumbsticks. Aux switches on transmitter control modes of operation, which just change which motors the thumbsticks operate.
  * 
