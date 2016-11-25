@@ -2,6 +2,7 @@
  * MotorDrv.cpp <<C++ functions>>
  * This is a library to deal with Arduino interfacing with the L298N H-bridge module, the IBT_2 half-bridge module, and killing current to motors that you don't want to move. 
  * By Joel R. Goodman, October 2016
+ * https://github.com/goodmajo/ME382PentRob
  * goodmajo@oregonstate.edu 
  */
 #include <Arduino.h>
