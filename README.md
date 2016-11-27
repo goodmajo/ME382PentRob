@@ -7,6 +7,9 @@ It is very important that anyone that reads this and looks at my code understand
   
   goodmajo@oregonstate.edu
 
+## 11 - 26 - 2016 ##
+Made a few changes to the class to make it easier to compile. It was still possible to get "ISO C++ forbids declaration of 'foo' with no type..." errors because the Arduino IDE seems to compile more permissively on some machines than others. This fix should make it all better.
+
 ## 11 - 25 - 2016 ##
 * Happy Thanksgiving!
 * If anyone is actually paying attention to the arduino code I'm writing, the version I uploaded today is more or less what I anticipate will end up being the final version. If you have questions about how the library works and how to use its functions, this code represents a good example of that.
