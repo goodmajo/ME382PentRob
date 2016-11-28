@@ -58,8 +58,8 @@ Stepper pull(stepsPerRevolution, pullIn1, pullIn2, pullIn3, pullIn4) ;
 int pullMove ;        // This variable will store values I use to move the stepper that pulls the kick motor.
 
 // These next variables are booleans that I'll use when switching modes
-boolean lfbs ;           // left front bottom switch
-boolean rfts ;           // right front top switch
+bool lfbs ;           // left front bottom switch
+bool rfts ;           // right front top switch
 
 MotorDrv robot ;      // Making a motor control object.
 
