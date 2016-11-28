@@ -216,9 +216,9 @@ void loop() {
 
     // Pull the platform!
     // I am seriously limiting the steps taken by the stepper, just to start with. If it's too little, I can always step it up. Better safe then sorry!
-    pullMove = map(rightStick, 1040, 1881, -stepsPerRevolution, stepsPerRevolution) ;
+    pullMove = map(rightStick, transMin, transMax, -stepsPerRevolution, stepsPerRevolution) ;
     if(pullMove > 10 || pullMove < -10){
-    pull.step(pullMove/4) ;
+    pull.step(pullMove) ;
     }
     else{
       robot.stepperKill(pullIn1, pullIn2, pullIn3, pullIn4) ;
