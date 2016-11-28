@@ -12,7 +12,7 @@ I have changed all the motor drive functions to require the max and min values y
 
 Also, I made some changes to the way the IBT2 functions deal with driving a motor in reverse. It works fine the way it was before with Arduino but Teensy (and presumably other platforms) had issues for some odd reason I can't figure out. In any event, it works both ways now.
 
-** Remember: ** I want you to let me know if you experience problems with any of my code! I want this to be something everyone can use and I can't fix problems I don't know about. The more I can improve on this code, the better.
+**Remember** : I want you to let me know if you experience problems with any of my code! I want this to be something everyone can use and I can't fix problems I don't know about. The more I can improve on this code, the better.
 
 ## 11 - 26 - 2016 ##
 Made a few changes to the class to make it easier to compile. It was still possible to get "ISO C++ forbids declaration of 'foo' with no type..." errors because the Arduino IDE seems to compile more permissively on some machines than others. This fix should make it all better.
