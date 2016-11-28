@@ -5,15 +5,6 @@
  * https://github.com/goodmajo/ME382PentRob
  * Supports L298N and IBT_2 motor drivers via MotorDrv class.
  * Everything is controlled with the y-axes of the thumbsticks. Aux switches on transmitter control modes of operation, which just change which motors the thumbsticks operate.
- * 
- * Some info on raw transmitter input that might be useful later on: 
- *      Transmitter sticks have a top range of.................. 1501 - 1881
- *      Transmitter sticks are centered at about................ 1400 - 1500
- *      Transmitter sticks have a bottom value range of......... 1040 - 1399
- *      Two way toggles have floor value of..................... 1048
- *      Two way toggles have ceiling value of....................1883
- *      Knobs have a floor value of .............................1060
- *      Knobs have a ceiling value of............................1887
  */
  
 #include <MotorDrv.h>  // Sweet custom class I made.
@@ -123,7 +114,7 @@ void loop() {
   leftSwitch = pulseIn(xmch5_INPUT, HIGH, 100000) ;
   rightSwitch = pulseIn(xmch6_INPUT, HIGH, 100000) ;
   
-  // The code below can be used to determine the top and bottom values for your thumbsticks and switches. It is probably a good idea to comment it out if you aren't using it.
+  // The code below can be used to determine the top and bottom values for your thumbsticks and switches via serial monitor. It is probably a good idea to comment it out if you aren't using it.
   /*
   Serial.print("Left Stick = ") ;
   Serial.print(leftStick) ;
