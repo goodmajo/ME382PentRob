@@ -8,11 +8,9 @@ It is very important that anyone that reads this and looks at my code understand
   goodmajo@oregonstate.edu
 
 ## 11 - 27 - 2016 ##
-I have changed all the motor drive functions to require the max and min values your transmitter sends to the microcontroller. This is because not all transmitters (or receivers) send PPM in the same range, and you should be able to use this library with any hardware you have at your disposal.
-
-Also, I made some changes to the way the IBT2 functions deal with driving a motor in reverse. It works fine the way it was before with Arduino but Teensy (and presumably other platforms) had issues for some odd reason I can't figure out. In any event, it works both ways now.
-
-**Remember** : I want you to let me know if you experience problems with any of my code! I want this to be something everyone can use and I can't fix problems I don't know about. The more I can improve on this code, the better.
+* I have changed all the motor drive functions to require the max and min values your transmitter sends to the microcontroller. This is because not all transmitters send PPM in the same range (this also varies from receiver to receiver), and I want you to be able to use this library with any hardware you have at your disposal.
+* I made some changes to the way the IBT2 functions deal with driving a motor in reverse. It works fine the way it was before with Arduino but Teensy (and presumably other platforms) had issues for some odd reason I can't figure out. In any event, it works on both platforms now.
+* If you have trouble using any of this code (*especially* the library), please tell me. I repeat: I want you to let me know if you experience problems with any of my code! I want this to be something everyone can use and I can't fix problems I don't know about. The more I can improve on this code, the better.
 
 ## 11 - 26 - 2016 ##
 Made a few changes to the class to make it easier to compile. It was still possible to get "ISO C++ forbids declaration of 'foo' with no type..." errors because the Arduino IDE seems to compile more permissively on some machines than others. This fix should make it all better.
