@@ -8,13 +8,13 @@ It is very important that anyone that reads this and looks at my code understand
   goodmajo@oregonstate.edu
 
 ## 11 - 27 - 2016 ##
-The competition is over, so the robot's arduino code is not going to change at all. The code works really well to drive the robot's motors (it is exceedingly precise), so it shouldn't need to change anyway. My robot did not perform well in competition due to a combination of some severe weight balance issues and operator incompetance (I was the operator so this hurts a lot), but the winning team *did* code I wrote that you find on this page, so I count this as a big victory.
+The competition is over, so the robot's arduino code is not going to change at all. The code works really well to drive the robot's motors (it is exceedingly precise), so it shouldn't need to change anyway. My robot did not perform well in competition due to a combination of some severe weight balance issues and operator incompetance (I was the operator so this hurts a lot), but the winning team *did* use the code I wrote that you find on this page, so I count this as a big victory.
 
 The Oregon State University Robotics Club is adding my library to their knowledge base, so future versions of it will be found there and possibly on my github as well.
 
 That's all! I hope you find my code useful!
 
-- Joel
+Joel
 
 ## 11 - 27 - 2016 ##
 * I have changed all the motor drive functions to require the max and min values your transmitter sends to the microcontroller. This is because not all transmitters send PPM in the same range (this also varies from receiver to receiver), and I want you to be able to use this library with any hardware you have at your disposal.
