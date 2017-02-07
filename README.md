@@ -1,4 +1,5 @@
 #ME382PentRob
+
 I'm using this README to document changes and updates to this project. The latest and greatest is at the top and the old stuff is at the bottom.
 
 It is very important that anyone that reads this and looks at my code understand that *I DO NOT KNOW WHAT I'M DOING HERE*. I've never programmed for this type of thing before, and this is my attempt at learning. If you know about Arduino programming or C++ and want to tell me how wrong I am about any of this stuff, please do not hesitate to do so.
@@ -8,7 +9,7 @@ It is very important that anyone that reads this and looks at my code understand
   goodmajo@oregonstate.edu
 
 ## 11 - 27 - 2016 ##
-The competition is over, so the robot's arduino code is not going to change at all. The code works really well to drive the robot's motors (it is exceedingly precise), so it shouldn't need to change anyway. My robot did not perform well in competition due to a combination of some severe weight balance issues and operator incompetance (I was the operator so this hurts a lot), but the winning team *did* use the code I wrote that you find on this page, so I count this as a big victory.
+The competition is over, so the robot's arduino code is not going to change at all. The code works really well to drive the robot's motors (it is exceedingly precise), so it shouldn't need to change anyway. My robot did not perform as well as I would have liked in competition due to a combination of some severe weight balance issues and operator incompetance (I was the operator so this hurts a lot) We placed well but not *as* well as we could have. BUT some of the other teams (including the first place team) *did* use the code I wrote that you find here, so I count this as a big victory.
 
 The Oregon State University Robotics Club is adding my library to their knowledge base, so future versions of it will be found there and probably here on my github as well.
 
